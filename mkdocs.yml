@@ -2,6 +2,15 @@ site_name: Mohammed Saajid's Portfolio
 site_description: Personal portfolio of Mohammed Saajid.
 site_author: Mohammed Saajid
 
+docs_dir: docs
+site_dir: site
+copy_docs_dir: true
+
+# Copy CNAME file to site directory
+extra:
+  static_files:
+    - CNAME
+
 theme:
   name: material
   palette:
