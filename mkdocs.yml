@@ -1,0 +1,36 @@
+site_name: Mohammed Saajid's Portfolio
+site_description: Personal portfolio of Mohammed Saajid.
+site_author: Mohammed Saajid
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode  
+
+nav:
+  - Home: index.md
+  - About Me: about.md
+
+# Extensions and plugins
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_root_heading: true
+            show_source: false
